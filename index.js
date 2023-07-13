@@ -1,28 +1,24 @@
-// Code your solutions in this file
-
-
-const names = ["Guadalupe", "Ollie", "Aki"];
-let surprise = "surprise";
+//names array deleted
 
 function writeCards(names, surprise) {
     const messages = [];
    for (let i = 0; i < names.length; i ++) { 
     const message = `Thank you, ${names[i]}, for the wonderful ${surprise} gift!`;
     messages.push(message);
-    console.log(message);
+    // console.log(message);
     }
-console.log(messages);
+    // console.log(messages);
     return messages;
-}
+};
 
-function countDown() {
-    let counter = 10;
-    while (counter >= 0) {
-    console.log(counter);
-    counter --;
+function countDown(number) /*(number) parameter to function*/{
+    //counter is now number
+    while (number >= 0) {
+    console.log(number); //Not testing process
+    number --;
 }
-return countDown;
-}
+    return countDown;
+};
 
+countDown(10);
 countDown(4);
-console.log(countDown(4));
